@@ -43,4 +43,5 @@ gardening_front/src/shared/api/common.ts
 gardening_front/src/shared/api/configuration.ts
 gardening_front/src/shared/api/git_push.sh
 gardening_front/src/shared/api/index.ts
+gardening_front/src/shared/api/base.ts
 openapitools.json

@@ -1,10 +1,13 @@
-import LoginPage from "@/pages/auth/LoginPage";
+import {Header} from "@/widgets/header/Header.tsx";
+import {BrowserRouter} from "react-router-dom";
+import {CommonRoutes} from '@/app/router/index.js';
 
 function App() {
     return (
-        <>
-            <LoginPage/>
-        </>
+        <BrowserRouter>
+            <Header/>
+            <CommonRoutes/>
+        </BrowserRouter>
     )
 }
 
