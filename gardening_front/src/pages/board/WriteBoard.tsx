@@ -1,7 +1,7 @@
 // demo.tsx
 
 
-import {type Attachment, ComposerInput} from "@/shared/shadcn/components/ui/ComposerInput"
+import {type Attachment, ComposerInput} from "@/shared/shadcn/components/ui/composer-input"
 import {toast} from "sonner"; // Adjust path as needed
 
 // Sample attachments for the demo

@@ -1,0 +1,52 @@
+package com.ggirick.gardening_back.dto.board;
+
+import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.*;
+
+import java.util.List;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class BoardResponseDTO {
+    @Schema(description = "글 번호", example = "1")
+    private Long id;
+    @Schema(description = "글 제목", example = "몬스테라 질문")
+    private String title;
+    @Schema(description = "글 내용", example = "질문있습니다.")
+    private String contents;
+
+    // 유저 정보
+    @Schema(description = "작성자 아이디", example = "user001")
+    private String writerUid;
+    @Schema(description = "작성자 닉네임", example = "몬린이")
+    private String writerNickname;
+    @Schema(description = "작성자 프로필", example = "https://.../profile.jpg")
+    private String writerProfileImage;
+
+    // counts
+    @Schema(description = "팔로워 수", example = "120")
+    private int followerCount;
+    @Schema(description = "팔로잉 수", example = "45")
+    private int followingCount;
+
+    @Schema(description = "조회수", example = "111")
+    private int viewCount;
+    @Schema(description = "추천수", example = "222")
+    private int likesCount;
+    @Schema(description = "댓글수", example = "33")
+    private int commentCount;
+
+    // 기타
+    @Schema(description = "올린 이미지", example = "이미지")
+    private List<BoardFileDTO> files;
+    @Schema(description = "게시글 태그 목록", example = "몬스테라/실내용")
+    private List<String> tags;
+
+    @Schema(description = "팔로우 여부", example = "true/false")
+    private boolean isFollowed;
+
+}
+
